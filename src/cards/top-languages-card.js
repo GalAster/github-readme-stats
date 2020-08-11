@@ -75,7 +75,7 @@ const renderTopLanguages = (topLangs, options = {}) => {
   } = options;
 
   let langs = Object.values(topLangs);
-  let langsToHide = {};
+  let langsToHide = {"html"};
 
   // populate langsToHide map for quick lookup
   // while filtering out
