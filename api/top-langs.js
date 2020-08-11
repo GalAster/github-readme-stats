@@ -34,15 +34,19 @@ module.exports = async (req, res) => {
     includeLangs.forEach(function (lang, index, langs) {
       langs[index] = lang
         .toLowerCase()
+        .replace("cpp", "c++")
         .replace("plusplus", "++")
         .replace("sharp", "#");
+        .replace("-", " "); 
     });
   } else if (excludeLangs.length) {
     excludeLangs.forEach(function (lang, index, langs) {
       langs[index] = lang
         .toLowerCase()
+        .replace("cpp", "c++")
         .replace("plusplus", "++")
         .replace("sharp", "#");
+        .replace("-", " ");
     });
   }
   res.setHeader("Content-Type", "image/svg+xml");
