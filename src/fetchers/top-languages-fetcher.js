@@ -101,7 +101,7 @@ async function fetchTopLanguages(
     }, {});
 
   const topLangs = Object.keys(repoNodes)
-    .slice(0, 10)
+    .slice(0, 5)
     .reduce((result, key) => {
       result[key] = repoNodes[key];
       return result;
