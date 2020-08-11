@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
         .toLowerCase()
         .replace("cpp", "c++")
         .replace("plusplus", "++")
-        .replace("sharp", "#");
+        .replace("sharp", "#")
         .replace("-", " "); 
     });
   } else if (excludeLangs.length) {
@@ -45,7 +45,7 @@ module.exports = async (req, res) => {
         .toLowerCase()
         .replace("cpp", "c++")
         .replace("plusplus", "++")
-        .replace("sharp", "#");
+        .replace("sharp", "#")
         .replace("-", " ");
     });
   }
